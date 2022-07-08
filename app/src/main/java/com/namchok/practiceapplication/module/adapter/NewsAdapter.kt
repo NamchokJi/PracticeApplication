@@ -34,13 +34,14 @@ class NewsAdapter(): RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var name = itemView.tvNameArtist
         var image = itemView.imgProfileArtist
-        var author = itemView.tvArtistPopularity
+        var author = itemView.tvAuthor
 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.name.text = mListArtist[position].title
-        holder.author.text = mListArtist[position].author
+        holder.author.leftText = "Author : "
+        holder.author.rightText = mListArtist[position].author
         context?.let {
             Glide.with(it)
                 .load(mListArtist[position].urlToImage)

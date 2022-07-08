@@ -42,33 +42,11 @@
                 android:layout_marginVertical="8dp"
                 />
 
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <com.namchok.practiceapplication.customview.DoubleTextview
+                android:id="@+id/tvAuthor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Author : "
-                    android:textColor="@color/white"
-                    android:layout_gravity="center"
-                    android:textSize="16sp"
-                    android:layout_marginVertical="8dp"
-                    />
-
-                <TextView
-                    android:id="@+id/tvArtistPopularity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=".Popularity"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center"
-                    android:textSize="16sp"
-                    android:layout_marginVertical="8dp"
-                    />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
